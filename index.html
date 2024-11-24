@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Currency Converter</h3>
+        <label for="amount">Enter amount: <br>
+            <input type="number" id="amount" min=0 />
+        </label>
+        <div class="conversion">
+            <div class="fromCurr">
+                <p>From</p>
+                <select  id="from">
+                    <option class="from" id="fromUSD" selected>USD</option>
+                    <option class="from" id="fromEUR">EUR</option>
+                    <option class="from" id="fromJPY">INR</option>
+                    <option class="from" id="fromAUD">AUD</option>
+                </select>
+            
+            </div>
+            <img id="arrow" src="arrow-right-arrow-left-solid.svg">
+            <div class="toCurr">
+                <p>To</p>
+                <select id="to">
+                    <option class="to" id ="toUSD">USD</option>
+                    <option class="to" id="toEUR">EUR</option>
+                    <option class="to" id="toINR" selected>INR</option>
+                    <option class="to" id="toAUD">AUD</option>
+                </select>
+            
+            </div>
+        </div>
+        <h3 id="msg"></h3>
+        <button class="res">Get Exchange Rate</button>
+        <button class="refresh">Refresh</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
